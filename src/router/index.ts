@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import type { RouteRecordRaw } from "vue-router";
 
 import HomePage from "../pages/PokemonStart.vue";
+import GamePage from "../pages/PokemonGame.vue";
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -16,7 +17,7 @@ const routes: Array<RouteRecordRaw> = [
 	{
 		path: "/game",
 		name: "game",
-		component: import("../pages/PokemonGame.vue"),
+		component: GamePage,
 		meta: {
 			title: "El Juego del Pokémon - ¡Adivina!",
 		},
